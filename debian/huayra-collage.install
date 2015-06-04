@@ -1,0 +1,4 @@
+dist/* usr/share/huayra-collage/dist
+bin/huayra-collage usr/bin/
+debian/huayra-collage.desktop /usr/share/applications
+debian/huayra-collage.svg /usr/share/icons/hicolor/scalable/apps
