@@ -5,3 +5,7 @@ html, body {
 a.active {
   font-weight: bold;
 }
+
+canvas {
+  border: 1px solid gray;
+}
