@@ -7,18 +7,22 @@ a.active {
 }
 
 canvas {
-  border: 1px solid gray;
+  box-shadow: 0 0 10px rgb(150, 150, 150);
+  background-color: white;
 }
 
 .absolute-element {
   position: absolute;
   top: -55px;
   left:-40px;
-  background-color: red;
 }
 
-.example {
+.application-container {
   position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
 
 .main-container {
@@ -27,7 +31,28 @@ canvas {
   right: 0;
   top: 0;
   bottom: 0;
-  border: 1px solid red;
-
+  background-color: rgb(210, 217, 223);
   padding: 20px;
+}
+
+.huayra-canvas {
+  padding: 10px;
+  position: absolute;
+  top: 21px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+
+.huayra-canvas-viewport {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.huayra-toolbar-container {
+  border: 1px solid red
 }
