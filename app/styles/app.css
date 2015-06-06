@@ -6,8 +6,8 @@ a.active {
   font-weight: bold;
 }
 
-canvas {
-  box-shadow: 0 0 10px rgb(150, 150, 150);
+canvas.lower-canvas {
+  box-shadow: 0 0 10px rgba(150, 150, 150, 0.5);
   background-color: white;
 }
 
@@ -38,7 +38,7 @@ canvas {
 .huayra-canvas {
   padding: 10px;
   position: absolute;
-  top: 21px;
+  top: 40px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -54,5 +54,28 @@ canvas {
 }
 
 .huayra-toolbar-container {
-  border: 1px solid red
+  background-color: white;
+  padding: 3px;
+  border-bottom: 1px solid gray;
+}
+
+
+.em-modal {
+  background-color: hsla(0, 0%, 0%, 0.35);
+}
+
+
+.right {
+  float: right;
+}
+
+.huayra-propertybar {
+  position: absolute;
+  right: 0;
+  top: 39px;
+  bottom: 0;
+  width: 300px;
+  border-left: 1px solid gray;
+  background-color: white;
+  padding-left: 10px;
 }

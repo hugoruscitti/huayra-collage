@@ -1,3 +1,36 @@
-{{huayra-toolbar}}
-{{huayra-canvas width=500 height=400}}
-{{outlet}}
+{{#huayra-toolbar}}
+  {{#em-modal-toggler modal-id="modal1" class="btn btn-sm btn-success"}}Propierdades{{/em-modal-toggler}}
+
+  <div class='right'>
+    {{#if showPropertyBar}}
+      <button {{action "togglePropertyBar"}} class="btn btn-success btn-sm active">P1</button>
+    {{else}}
+      <button {{action "togglePropertyBar"}} class="btn btn-success btn-sm">P2</button>
+    {{/if}}
+  </div>
+
+{{/huayra-toolbar}}
+
+{{huayra-canvas width=width height=height}}
+
+
+{{huayra-propertybar tab_idx=tab_idx show=showPropertyBar}}
+
+
+
+
+{{#em-modal configName="bs" id="modal1"}}
+{{#em-modal-title}}
+    {{#em-modal-toggler class="close"}}×{{/em-modal-toggler}}
+    <h4 class="modal-title">Propiedades del la imagen</h4>
+{{/em-modal-title}}
+
+{{#em-modal-body}}
+  <p>Ancho: {{input value=newWidth}}</p>
+  <p>Alto: {{input value=newHeight}}</p>
+{{/em-modal-body}}
+
+{{#em-modal-footer}}
+    {{#em-modal-toggler class="btn btn-default"}}Aceptar{{/em-modal-toggler}}
+{{/em-modal-footer}}
+{{/em-modal}}

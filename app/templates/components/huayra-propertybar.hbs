@@ -1,0 +1,23 @@
+{{#if show}}
+  <div class="huayra-propertybar">
+
+    {{#em-tabs selected-idx=tab_idx}}
+
+      {{#em-tab-list}}
+          {{#em-tab}}Elementos{{/em-tab}}
+          {{#em-tab}}Propiedades{{/em-tab}}
+      {{/em-tab-list}}
+
+      {{#em-tab-panel}}
+        <p><button class="btn btn-success" {{action "createRectangle"}}>Rectángulo</button></p>
+      {{/em-tab-panel}}
+
+      {{#em-tab-panel}}
+          <p>Propiedades</p>
+      {{/em-tab-panel}}
+
+    {{/em-tabs}}
+
+    {{yield}}
+  </div>
+{{/if}}
