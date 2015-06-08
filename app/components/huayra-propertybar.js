@@ -7,6 +7,14 @@ export default Ember.Component.extend({
   actions: {
     createRectangle: function() {
       this.get('canvas').createRectangle();
-    }
+    },
+
+    createOval: function() {
+      this.get('canvas').createOval();
+    },
+
+    createText: function() {
+      this.get('canvas').createText();
+    },
   }
 });
