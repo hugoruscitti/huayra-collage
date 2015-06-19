@@ -1,0 +1,12 @@
+{{yield}}
+
+{{#if hasSelected}}
+
+  {{#if isText}}
+    <p>Texto: {{input value=text}}</p>
+  {{/if}}
+
+{{else}}
+  <p>No hay ningún objeto seleccionado</p>
+
+{{/if}}
